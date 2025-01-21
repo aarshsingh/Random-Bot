@@ -4,6 +4,10 @@ import requests
 import json
 import time
 
+[[ports]]
+localPort = 8080
+externalPort = 8080
+
 TOKEN = os.environ.get("TOKEN", "7692429836:AAHyUFP6os1A3Hirisl5TV1O5kArGAlAEuQ")
 CHAT = os.environ.get("CHATID", "")
 bot = telebot.TeleBot(TOKEN)
