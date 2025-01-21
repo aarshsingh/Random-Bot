@@ -4,7 +4,6 @@ import requests
 import json
 import time
 
-[[ports]]
 localPort = 8080
 externalPort = 8080
 
