@@ -76,11 +76,12 @@ def main():
                 bot.send_video(CHAT,open(file,"rb"))
             os.remove(file)    
 
-        time.sleep(10)
+        time.sleep(5)
         id = str(int(id)+1)
         while not checkvalidid(id):
-            time.sleep(10)
+            time.sleep(5)
 
 
 # polling
 bot.infinity_polling(main())
+host='0.0.0.0', port=8080)
