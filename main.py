@@ -83,5 +83,5 @@ def main():
 
 
 # polling
-bot.infinity_polling(main())
+bot.infinity_polling(main()),
 host='0.0.0.0', port=8080)
