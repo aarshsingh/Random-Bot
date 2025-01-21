@@ -3,6 +3,21 @@ import os
 import requests
 import json
 import time
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Hello, World!"
+
+@app.route('/health')
+def health_check():
+    return "OK", 200  # Responding with a 200 OK for health checks
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=8080) # Ensure it listens on port 8080
+
 
 TOKEN = os.environ.get("TOKEN", "7692429836:AAHyUFP6os1A3Hirisl5TV1O5kArGAlAEuQ")
 CHAT = os.environ.get("CHATID", "")
